@@ -1,0 +1,203 @@
+Wed 03/15/2017 , 23:18:54.01
+
+C:\Users\100568635\Documents\GitHub\SOFE3720U\Face_Detection\face.train\train>opencv_traincascade.ex
+e -data . -vec positive_faces.vec -bg bg.txt -numStages 10 -featureType HAAR -w 19 -h 19
+PARAMETERS:
+cascadeDirName: .
+vecFileName: positive_faces.vec
+bgFileName: bg.txt
+numPos: 2000
+numNeg: 1000
+numStages: 10
+precalcValBufSize[Mb] : 1024
+precalcIdxBufSize[Mb] : 1024
+acceptanceRatioBreakValue : -1
+stageType: BOOST
+featureType: HAAR
+sampleWidth: 19
+sampleHeight: 19
+boostType: GAB
+minHitRate: 0.995
+maxFalseAlarmRate: 0.5
+weightTrimRate: 0.95
+maxDepth: 1
+maxWeakCount: 100
+mode: BASIC
+Number of unique features given windowSize [19,19] : 63960
+
+===== TRAINING 0-stage =====
+<BEGIN
+POS count : consumed   2000 : 2000
+NEG count : acceptanceRatio    1000 : 1
+Precalculation time: 5.422
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|   0.9975|    0.684|
++----+---------+---------+
+|   4|   0.9975|    0.635|
++----+---------+---------+
+|   5|   0.9965|    0.492|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 0 minutes 21 seconds.
+
+===== TRAINING 1-stage =====
+<BEGIN
+POS count : consumed   2000 : 2007
+NEG count : acceptanceRatio    1000 : 0.265322
+Precalculation time: 4.696
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|   0.9975|    0.637|
++----+---------+---------+
+|   4|   0.9975|    0.637|
++----+---------+---------+
+|   5|   0.9955|    0.462|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 0 minutes 38 seconds.
+
+===== TRAINING 2-stage =====
+<BEGIN
+POS count : consumed   2000 : 2016
+NEG count : acceptanceRatio    1000 : 0.155982
+Precalculation time: 4.93
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|   0.9995|    0.921|
++----+---------+---------+
+|   4|    0.996|     0.67|
++----+---------+---------+
+|   5|    0.996|     0.67|
++----+---------+---------+
+|   6|   0.9955|    0.634|
++----+---------+---------+
+|   7|   0.9955|     0.51|
++----+---------+---------+
+|   8|   0.9955|    0.379|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 1 minutes 6 seconds.
+
+===== TRAINING 3-stage =====
+<BEGIN
+POS count : consumed   2000 : 2026
+NEG count : acceptanceRatio    1000 : 0.055991
+Precalculation time: 4.643
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|   0.9995|    0.878|
++----+---------+---------+
+|   4|   0.9975|    0.752|
++----+---------+---------+
+|   5|   0.9975|    0.772|
++----+---------+---------+
+|   6|   0.9955|    0.565|
++----+---------+---------+
+|   7|   0.9955|    0.499|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 1 minutes 32 seconds.
+
+===== TRAINING 4-stage =====
+<BEGIN
+POS count : consumed   2000 : 2035
+NEG count : acceptanceRatio    1000 : 0.0284285
+Precalculation time: 4.572
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|   0.9995|    0.905|
++----+---------+---------+
+|   5|   0.9965|    0.733|
++----+---------+---------+
+|   6|    0.997|    0.741|
++----+---------+---------+
+|   7|    0.996|     0.57|
++----+---------+---------+
+|   8|   0.9955|    0.561|
++----+---------+---------+
+|   9|   0.9955|    0.426|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 2 minutes 5 seconds.
+
+===== TRAINING 5-stage =====
+<BEGIN
+POS count : consumed   2000 : 2046
+NEG count : acceptanceRatio    1000 : 0.0116313
+Precalculation time: 4.452
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|        1|        1|
++----+---------+---------+
+|   4|    0.996|    0.794|
++----+---------+---------+
+|   5|   0.9955|    0.645|
++----+---------+---------+
+|   6|   0.9955|    0.388|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 2 minutes 39 seconds.
+
+===== TRAINING 6-stage =====
+<BEGIN
+POS count : consumed   2000 : 2055
+NEG count : acceptanceRatio    1000 : 0.0046422
+Precalculation time: 4.205
++----+---------+---------+
+|  N |    HR   |    FA   |
++----+---------+---------+
+|   1|        1|        1|
++----+---------+---------+
+|   2|        1|        1|
++----+---------+---------+
+|   3|   0.9955|    0.525|
++----+---------+---------+
+|   4|   0.9955|    0.525|
++----+---------+---------+
+|   5|   0.9955|    0.095|
++----+---------+---------+
+END>
+Training until now has taken 0 days 0 hours 3 minutes 37 seconds.
+
+===== TRAINING 7-stage =====
+<BEGIN
+POS count : consumed   2000 : 2064
+NEG count : acceptanceRatio    1 : 0.000488281
+Required leaf false alarm rate achieved. Branch training terminated.
+Wed 03/15/2017 , 23:22:35.49
+
+C:\Users\100568635\Documents\GitHub\SOFE3720U\Face_Detection\face.train\train>Pause
+Press any key to continue . . .
