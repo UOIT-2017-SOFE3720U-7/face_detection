@@ -1,10 +1,9 @@
 import numpy as np
 import cv2
-from PIL import Image
-import os
 
-face_cascade_path = os.path.abspath('train/cascade_ALL_HAAR/Group7_cascade_face_ALL_HAAR.xml')
-img_path = 'img/exercise-5.jpg'
+
+face_cascade_path = 'train/cascade_ALL_HAAR/Group7_cascade_face_ALL_HAAR.xml'
+img_path = 'img/exercise-6.jpg'
 
 face_cascade = cv2.CascadeClassifier(face_cascade_path)
 #eye_cascade = cv2.CascadeClassifier('C:/opencv/build/etc/haarcascades/haarcascade_eye.xml')
