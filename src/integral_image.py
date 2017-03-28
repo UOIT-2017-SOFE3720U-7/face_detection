@@ -33,4 +33,7 @@ def integral_img_from_array(img_array):
                 integral_img_array[row, column] = img_array[row, column] + integral_img_array[row - 1, column] \
                                                   + integral_img_array[row, column - 1] - integral_img_array[
                                                       row - 1, column - 1]
+    # add row and column of zeros to integral image to have zero for negative indices
+    integral_img_array = np.insert(integral_img_array, len(integral_img_array), [0], axis=1)
+    integral_img_array = np.insert(integral_img_array, len(integral_img_array), [0], axis=0)
     return integral_img_array

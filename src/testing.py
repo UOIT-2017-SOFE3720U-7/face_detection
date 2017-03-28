@@ -20,13 +20,13 @@ window_size = 19
 print '###############################################################'
 print 'theta = ', str(theta)
 #weak_classifiers = Haar_features.all_features(19)
-with open('two_rectangles_classifiers_8') as f:
+with open('two_rectangles_classifiers_9') as f:
     two_rectangles = pickle.load(f)
     #two_rectangles = two_rectangles[0:10]
-with open('three_rectangles_classifiers_8') as f:
+with open('three_rectangles_classifiers_9') as f:
     three_rectangles = pickle.load(f)
     #three_rectangles = three_rectangles[0:10]
-with open('four_squares_classifiers_8') as f:
+with open('four_squares_classifiers_9') as f:
     four_squares = pickle.load(f)
 
 # Start of features valuation
@@ -130,9 +130,7 @@ for resize_factor in xrange(min(img.width,img.height)/(window_size*2), 3, -1):
             cropped_img = work_img.crop((row,column,row + window_size, column + window_size))
             img_array = np.asarray(cropped_img)
             integral_img = integral_img_from_array(img_array)
-            # add row and column of zeros to integral image to have zero for negative indices
-            integral_img = np.insert(integral_img, 19, [0], axis=1)
-            integral_img = np.insert(integral_img, 19, [0], axis=0)
+
             img_i_detection_array = two_rectangles_values(integral_img)
             img_i_detection_array.extend(three_rectangles_values(integral_img))
             img_i_detection_array.extend(four_squares_values(integral_img))
